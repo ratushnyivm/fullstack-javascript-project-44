@@ -18,7 +18,7 @@ const engine = (gameModule, numberOfRounds = 3) => {
     if (answer === rightAnswer) {
       console.log('Correct!');
     } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'.`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
       return console.log(`Let's try again, ${name}!`);
     }
   }

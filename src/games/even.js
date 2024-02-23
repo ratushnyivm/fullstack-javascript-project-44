@@ -5,13 +5,9 @@ const numberMin = 0;
 const numberMax = 100;
 
 const even = () => {
-  const output = [description];
-
   const question = getRandomArbitrary(numberMin, numberMax);
-  output.push(question);
-
   const rightAnswer = question % 2 === 0 ? 'yes' : 'no';
-  output.push(rightAnswer);
+  const output = [description, question, rightAnswer];
 
   return output;
 };
