@@ -24,4 +24,19 @@ const greatestCommonDivisor = (firstNumber, secondNumber) => {
   }
 };
 
-export { getRandomArbitrary, greatestCommonDivisor, randomChoice };
+const isPrime = (number) => {
+  if (number % 2 === 0 || number === 1) {
+    return number === 2;
+  }
+
+  let divisor = 3;
+  while (divisor * divisor <= number && number % divisor !== 0) {
+    divisor += 2;
+  }
+
+  return divisor * divisor > number;
+};
+
+export {
+  getRandomArbitrary, greatestCommonDivisor, isPrime, randomChoice,
+};
